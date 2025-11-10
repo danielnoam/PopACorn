@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6f1b43a145a04e729c1b4bdcefcab301, type: 3}
-  m_Name: Match3Level_1
+  m_Name: Match3Level_6
   m_EditorClassIdentifier: Assembly-CSharp::SOMatch3Level
-  levelName: Level 1
-  gridShape: {fileID: 11400000, guid: 4d4e698909a0cfd41882b043169c7594, type: 2}
+  levelName: Level 6
+  gridShape: {fileID: 11400000, guid: 35a7e5d1954754f48b71205b6dbd7d4c, type: 2}
   matchObjects:
     internalItems:
     - item: {fileID: 11400000, guid: 06c7eecdb5f79c542a8465be434742cc, type: 2}
@@ -31,7 +31,8 @@ MonoBehaviour:
   objectives:
   - rid: 190982044644802808
   loseConditions:
-  - rid: 190982061879197804
+  - rid: 190982044644802816
+  - rid: 190982061879197805
   references:
     version: 2
     RefIds:
@@ -39,9 +40,14 @@ MonoBehaviour:
       type: {class: GetMatches, ns: , asm: Assembly-CSharp}
       data:
         objectiveSprite: {fileID: 0}
-        requiredAmount: 13
-    - rid: 190982061879197804
+        requiredAmount: 36
+    - rid: 190982044644802816
       type: {class: MoveLimit, ns: , asm: Assembly-CSharp}
       data:
         conditionSprite: {fileID: 0}
         allowedMoves: 10
+    - rid: 190982061879197805
+      type: {class: TimeLimit, ns: , asm: Assembly-CSharp}
+      data:
+        conditionSprite: {fileID: 0}
+        allowedTime: 30
